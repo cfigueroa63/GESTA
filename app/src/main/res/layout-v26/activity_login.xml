@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".Login">
 
     <TextView
@@ -11,13 +12,12 @@
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="306dp"
         android:layout_height="50dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:hint="@string/correo_usuario"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/button"
@@ -28,7 +28,6 @@
         android:text="@string/iniciar_sesi_n"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 
@@ -36,38 +35,35 @@
         android:id="@+id/editText"
         android:layout_width="304dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="304dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="56dp"
+        android:id="@+id/imageView3"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/lolo"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/lolo" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView4"
+        android:layout_width="163dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.134"
-        app:srcCompat="@mipmap/logocalisoft"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@mipmap/logocalisoft" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
