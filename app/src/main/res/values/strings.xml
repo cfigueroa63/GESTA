@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Gesta</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="correo_usuario">Correo/usuario</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>
