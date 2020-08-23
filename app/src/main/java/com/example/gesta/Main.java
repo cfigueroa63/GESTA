@@ -20,10 +20,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Main extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private TextView tv_user_nav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,13 @@ public class Main extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+        View headerView = navigationView.getHeaderView(0);
+        TextView tv_user_nav = (TextView) headerView.findViewById(R.id.tv_user_nav);
+        String data_user = getIntent().getStringExtra("data_user");
+        tv_user_nav .setText(data_user);
+
     }
 
     @Override
