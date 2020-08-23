@@ -1,16 +1,16 @@
-package com.example.gesta.ui.share;
+package com.example.gesta.ui.mannana;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class MannanaViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public MannanaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is share fragment");
+        mText.setValue("This is mañana fragment");
     }
 
     public LiveData<String> getText() {

@@ -21,7 +21,6 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Main extends AppCompatActivity {
 
@@ -47,8 +46,8 @@ public class Main extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
+                R.id.nav_inicio, R.id.nav_semana, R.id.nav_mes,
+                R.id.nav_pendiente, R.id.nav_atrazada, R.id.nav_servicios, R.id.nav_hoy, R.id.nav_mannana, R.id.nav_no_asignada)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

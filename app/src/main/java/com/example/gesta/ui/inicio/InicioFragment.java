@@ -1,4 +1,4 @@
-package com.example.gesta.ui.tools;
+package com.example.gesta.ui.inicio;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,20 +14,20 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.gesta.R;
 
-public class ToolsFragment extends Fragment {
+public class InicioFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private InicioViewModel inicioViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_tools, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        inicioViewModel =
+                ViewModelProviders.of(this).get(InicioViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_inicio, container, false);
+        //final TextView textView = root.findViewById(R.id.text_inicio);
+        inicioViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+               // textView.setText(s);
             }
         });
         return root;

@@ -1,16 +1,16 @@
-package com.example.gesta.ui.tools;
+package com.example.gesta.ui.servicios;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ToolsViewModel extends ViewModel {
+public class ServiciosViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ToolsViewModel() {
+    public ServiciosViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is tools fragment");
+        mText.setValue("This is servicios fragment");
     }
 
     public LiveData<String> getText() {

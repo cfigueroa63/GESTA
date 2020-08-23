@@ -1,4 +1,4 @@
-package com.example.gesta.ui.send;
+package com.example.gesta.ui.pendientes;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.gesta.R;
 
-public class SendFragment extends Fragment {
+public class PendienteFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private PendienteViewModel toolsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        toolsViewModel =
+                ViewModelProviders.of(this).get(PendienteViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_pendiente, container, false);
+        final TextView textView = root.findViewById(R.id.text_pendiente);
+        toolsViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

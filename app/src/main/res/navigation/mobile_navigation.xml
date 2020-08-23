@@ -3,41 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_inicio">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.gesta.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_inicio"
+        android:name="com.example.gesta.ui.inicio.InicioFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_inicio" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.gesta.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_hoy"
+        android:name="com.example.gesta.ui.hoy.HoyFragment"
+        android:label="@string/menu_hoy"
+        tools:layout="@layout/fragment_hoy" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.gesta.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_mannana"
+        android:name="com.example.gesta.ui.mannana.ManannaFragment"
+        android:label="@string/menu_mannana"
+        tools:layout="@layout/fragment_mannana" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.gesta.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_semana"
+        android:name="com.example.gesta.ui.semana.SemanaFragment"
+        android:label="@string/menu_semana"
+        tools:layout="@layout/fragment_semana" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.gesta.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_mes"
+        android:name="com.example.gesta.ui.mes.MesFragment"
+        android:label="@string/menu_mes"
+        tools:layout="@layout/fragment_mes" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.gesta.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_pendiente"
+        android:name="com.example.gesta.ui.pendientes.PendienteFragment"
+        android:label="@string/menu_pendiente"
+        tools:layout="@layout/fragment_pendiente" />
+
+    <fragment
+        android:id="@+id/nav_atrazada"
+        android:name="com.example.gesta.ui.atrazadas.AtrazadaFragment"
+        android:label="@string/menu_atrazada"
+        tools:layout="@layout/fragment_atrazada" />
+
+    <fragment
+        android:id="@+id/nav_no_asignada"
+        android:name="com.example.gesta.ui.no_asignada.NoAsignadaFragment"
+        android:label="@string/menu_no_asignada"
+        tools:layout="@layout/fragment_no_asignada" />
+
+    <fragment
+        android:id="@+id/nav_servicios"
+        android:name="com.example.gesta.ui.servicios.ServiciosFragment"
+        android:label="@string/menu_servicios"
+        tools:layout="@layout/fragment_servicios" />
 </navigation>
