@@ -1,12 +1,15 @@
 package com.example.gesta;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.appcompat.view.menu.ActionMenuItem;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -21,6 +24,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.widget.TextView;
+import android.widget.Toast;
+
 
 public class Main extends AppCompatActivity {
 
@@ -33,14 +38,15 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton actualizar = findViewById(R.id.actualizar);
+        actualizar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Acción no implementada aun", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -58,7 +64,7 @@ public class Main extends AppCompatActivity {
         View headerView = navigationView.getHeaderView(0);
         TextView tv_user_nav = (TextView) headerView.findViewById(R.id.tv_user_nav);
         String data_user = getIntent().getStringExtra("data_user");
-        tv_user_nav .setText(data_user);
+        tv_user_nav.setText(data_user);
 
     }
 
@@ -75,4 +81,11 @@ public class Main extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void cerrar_sesion(MenuItem menu) {
+        Intent cerrar = new Intent(this, Login.class);
+        startActivity(cerrar);
+    }
+
 }
+
