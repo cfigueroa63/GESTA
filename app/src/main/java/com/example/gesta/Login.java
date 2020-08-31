@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
 
     public void login(View view) {
         if (user.getText().length() != 0 && pass.getText().length() != 0) {
-            if (1==1) {
+            if (autenticar()) {
                 Intent main = new Intent(this, Main.class);
                 main.putExtra("data_user", nombre);
                 startActivity(main);
@@ -77,5 +77,8 @@ public class Login extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 
 }

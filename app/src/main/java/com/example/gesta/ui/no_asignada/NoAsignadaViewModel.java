@@ -10,7 +10,7 @@ public class NoAsignadaViewModel extends ViewModel {
 
     public NoAsignadaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is no asignada fragment");
+        mText.setValue("Tareas no Asignadas");
     }
 
     public LiveData<String> getText() {

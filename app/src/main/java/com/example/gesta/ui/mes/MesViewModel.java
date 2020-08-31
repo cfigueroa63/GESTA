@@ -10,7 +10,7 @@ public class MesViewModel extends ViewModel {
 
     public MesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is mes fragment");
+        mText.setValue("Tareas del Mes");
     }
 
     public LiveData<String> getText() {

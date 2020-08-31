@@ -13,36 +13,36 @@
                 <group android:checkableBehavior="single">
                     <item
                         android:id="@+id/nav_hoy"
-                        android:icon="@drawable/ic_menu_gallery"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_hoy" />
                     <item
                         android:id="@+id/nav_mannana"
-                        android:icon="@drawable/ic_menu_gallery"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_mannana" />
 
                     <item
                         android:id="@+id/nav_semana"
-                        android:icon="@drawable/ic_menu_gallery"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_semana" />
                     <item
                         android:id="@+id/nav_mes"
-                        android:icon="@drawable/ic_menu_slideshow"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_mes" />
                     <item
                         android:id="@+id/nav_pendiente"
-                        android:icon="@drawable/ic_menu_manage"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_pendiente" />
                     <item
                         android:id="@+id/nav_atrazada"
-                        android:icon="@drawable/ic_menu_share"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_atrazada" />
                     <item
                         android:id="@+id/nav_no_asignada"
-                        android:icon="@drawable/ic_menu_gallery"
+                        android:icon="@android:drawable/ic_menu_edit"
                         android:title="@string/menu_no_asignada" />
                     <item
                         android:id="@+id/nav_servicios"
-                        android:icon="@drawable/ic_menu_send"
+                        android:icon="@android:drawable/ic_menu_manage"
                         android:title="@string/menu_servicios" />
                 </group>
             </menu>

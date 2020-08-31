@@ -10,7 +10,7 @@ public class MannanaViewModel extends ViewModel {
 
     public MannanaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is mañana fragment");
+        mText.setValue("Tareas de Mañana");
     }
 
     public LiveData<String> getText() {

@@ -10,7 +10,7 @@ public class PendienteViewModel extends ViewModel {
 
     public PendienteViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is tools fragment");
+        mText.setValue("Tareas Pendientes");
     }
 
     public LiveData<String> getText() {

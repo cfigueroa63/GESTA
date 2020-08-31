@@ -10,7 +10,7 @@ public class AtrazadaViewModel extends ViewModel {
 
     public AtrazadaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is atrazada fragment");
+        mText.setValue("Tareas atrazadas");
     }
 
     public LiveData<String> getText() {

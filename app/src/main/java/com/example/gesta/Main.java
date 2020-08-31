@@ -3,6 +3,7 @@ package com.example.gesta;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.gesta.ui.hoy.HoyFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.view.menu.ActionMenuItem;
+import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -23,8 +25,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 
 public class Main extends AppCompatActivity {
@@ -65,6 +68,7 @@ public class Main extends AppCompatActivity {
         TextView tv_user_nav = (TextView) headerView.findViewById(R.id.tv_user_nav);
         String data_user = getIntent().getStringExtra("data_user");
         tv_user_nav.setText(data_user);
+
 
     }
 

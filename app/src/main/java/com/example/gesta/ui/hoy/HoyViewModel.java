@@ -10,7 +10,7 @@ public class HoyViewModel extends ViewModel {
 
     public HoyViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is hoy fragment");
+        mText.setValue("Tareas de Hoy");
     }
 
     public LiveData<String> getText() {

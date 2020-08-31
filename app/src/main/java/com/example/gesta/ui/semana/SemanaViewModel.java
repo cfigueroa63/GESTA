@@ -10,7 +10,7 @@ public class SemanaViewModel extends ViewModel {
 
     public SemanaViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is semana fragment");
+        mText.setValue("Tareas de la semana");
     }
 
     public LiveData<String> getText() {
